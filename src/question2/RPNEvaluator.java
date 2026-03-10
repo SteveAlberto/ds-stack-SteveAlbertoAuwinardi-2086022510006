@@ -26,7 +26,7 @@ public class RPNEvaluator {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Masukkan ekspresi RPN (contoh: 5 1 2 + 4 * + 3 -): ");
+        System.out.print("Masukkan ekspresi RPN (contoh: 5 1 + 4 *): ");
         String input = scanner.nextLine();
         String[] tokens = input.split(" ");
         int result = RPNEvaluator.evaluate_rpn(tokens);
